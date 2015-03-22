@@ -98,7 +98,6 @@ func factorial(n: Int) -> Int {
 
 let result = factorial(10)
 
-
 // closures
 
 let incrementFunction = {number in number + 1}
