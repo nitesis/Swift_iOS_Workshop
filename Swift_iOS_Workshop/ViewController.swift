@@ -16,7 +16,6 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
-    private var weatherRequest: WeatherRequest? = nil
     private var location: CLLocation? = nil
     
     @IBOutlet weak var cityLabel: UILabel!
@@ -32,12 +31,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-
-        checkPermission()
     }
     
     private func checkPermission() {
@@ -91,24 +84,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func performServerRequest() {
-        if let location = self.location {
-            let longitude = location.coordinate.longitude
-            let latitude = location.coordinate.latitude
-            self.weatherRequest = WeatherRequest(latitude: latitude, longitude: longitude)
-            weatherRequest?.successBlock = { weatherData in
-                NSLog("Received a weather data: %@", weatherData)
-                
-                self.cityLabel.text = weatherData.city
-                self.weatherLabel.text = weatherData.weather
-                self.tempLabel.text = self.tempStringForDouble(weatherData.temp)
-                self.minTempLabel.text = self.tempStringForDouble(weatherData.minTemp)
-                self.maxTempLabel.text = self.tempStringForDouble(weatherData.maxTemp)
-                self.humidityLabel.text = self.humidityStringForInt(weatherData.humidity)
-                
-                WeatherHelper.loadIcon(weatherData.icon, imageView: self.iconImageView)
-            }
-            weatherRequest?.performRequest()
-        }
+        // TODO
     }
     
     private func tempStringForDouble(temp: Double?) -> String {
@@ -127,8 +103,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func reloadPressed(sender: AnyObject) {
-        self.location = nil
-        startLocationRequest()
+        // TODO
     }
 }
 

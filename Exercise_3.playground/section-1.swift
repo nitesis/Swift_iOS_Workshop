@@ -75,4 +75,20 @@ D) Nun wollen wir ein Reload-Machanismus implementieren (Optional)
   kann) und anschliessend 'startLocationRequest' aufrufen.
 
 
+E) Nun wollen wir noch das Wetter-Icon korrekt setzen.
+
+- Vom Wetter-Service kommt ein Icon-Identifier als Zeichenkette zurück,
+  welches das aktuelle Wetter darstellen soll.
+
+- Verbinden Sie im Interface-Builder das Image-View oben rechts mit dem
+  Outlet 'iconImageView' von 'ViewController'.
+
+- Nun können Sie die Hilfsklasse WeatherHelper verwenden, um das Bild zu
+  laden (in der erwähnten Hilfsklasse ist nur eine Methode vorhanden). Der 
+  Aufruf sollte irgendwo in 'performServerRequest' stattfinden (nach 
+  Erhalt der Wetterinformation).
+
+
 */
+
+
