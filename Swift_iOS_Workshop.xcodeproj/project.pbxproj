@@ -16,6 +16,7 @@
 		435EFE491ABB160700114B22 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EFE481ABB160700114B22 /* WeatherRequest.swift */; };
 		435EFE4C1ABB1F6000114B22 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EFE4B1ABB1F6000114B22 /* WeatherData.swift */; };
 		435EFE501ABB2DC400114B22 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EFE4F1ABB2DC400114B22 /* SwiftyJSON.swift */; };
+		4366D3A01AC05686004F3AA6 /* Course-2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4366D39F1AC05686004F3AA6 /* Course-2.pdf */; };
 		439411231ABF0FD1008F4608 /* WeatherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439411221ABF0FD1008F4608 /* WeatherHelper.swift */; };
 		43D3B2581ABAD5D00047A467 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D3B2571ABAD5D00047A467 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		435EFE481ABB160700114B22 /* WeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		435EFE4B1ABB1F6000114B22 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		435EFE4F1ABB2DC400114B22 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		4366D39F1AC05686004F3AA6 /* Course-2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Course-2.pdf"; path = "Slides/Course-2.pdf"; sourceTree = "<group>"; };
 		439411221ABF0FD1008F4608 /* WeatherHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherHelper.swift; sourceTree = "<group>"; };
 		439411241ABF5F31008F4608 /* Exercise_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exercise_3.playground; sourceTree = "<group>"; };
 		43D3B2571ABAD5D00047A467 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				43D3B2571ABAD5D00047A467 /* CoreLocation.framework */,
+				4366D39E1AC0529A004F3AA6 /* Slides */,
 				434CE6741AB5C4C20090EBB0 /* Playgrounds */,
 				434CE6791AB5F5230090EBB0 /* Uebungen */,
 				432CAC091AB62764001C7925 /* Loesungen */,
@@ -194,6 +197,14 @@
 			name = Lib;
 			sourceTree = "<group>";
 		};
+		4366D39E1AC0529A004F3AA6 /* Slides */ = {
+			isa = PBXGroup;
+			children = (
+				4366D39F1AC05686004F3AA6 /* Course-2.pdf */,
+			);
+			name = Slides;
+			sourceTree = "<group>";
+		};
 		439411211ABF0F99008F4608 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4366D3A01AC05686004F3AA6 /* Course-2.pdf in Resources */,
 				434CE65A1AB5C4B40090EBB0 /* Main.storyboard in Resources */,
 				434CE65F1AB5C4B40090EBB0 /* LaunchScreen.xib in Resources */,
 				434CE65C1AB5C4B40090EBB0 /* Images.xcassets in Resources */,
