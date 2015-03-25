@@ -26,13 +26,14 @@ Schauen Sie diese Komponenten, um Ihnen mit dem Projekt vertraut zu machen.
 A) In Teil A wollen wir die UI-Elemente und Klassen vom Storyboard-File mit dem Code v
   erbinden:
 
-- Verbinden Sie im Interface-Builder alle Labels, welche wir nach Erhalt der 
+- Definieren Sie im Interface-Builder die Verbindung zw. Controller-Klasse und unserer
+Klasse 'ViewController', damit eine Instanz von 'ViewController' erzeugt wird, wenn die
+Storyboard-Datei geladen wird.
+
+- Verbinden Sie im Interface-Builder alle Labels, welche wir nach Erhalt der
   Wetterinformationen vom Server ändern werden, mit deren Outlets in der Controller-Klasse 
   'ViewController'.
 
-- Definieren Sie im Interface-Builder die Verbindung zw. Controller-Klasse und unserer 
-  Klasse 'ViewController', damit eine Instanz von 'ViewController' erzeugt wird, wenn die 
-  Storyboard-Datei geladen wird.
 
 
 B) Die Standortabfrage mit CoreLocation ist schon implementiert. Nun müssen Sie in der
