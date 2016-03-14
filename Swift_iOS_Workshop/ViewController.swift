@@ -30,8 +30,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Hier erscheint Controller
         locationManager.delegate = self
+        // Aufgabe C)
+        checkPermission()
     }
     
     private func checkPermission() {
@@ -83,7 +85,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func performServerRequest() {
-        // TODO
+        // Erzeugt Instanz von WeatherRequest und speichert das in eine Property im ViewController
+        weatherRequest = WeatherRequest(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        
+        weatherRequest?.successBlock = {
+            weatherData in
+            self.cityLabel.text = weatherData.city!
+            self.weatherLabel.text = weatherData.weather!
+            self.tempLabel.text = "\(weatherData.temp!)°"
+            self.minTempLabel.text = "\(weatherData.minTemp!)°"
+            self.maxTempLabel.text = "\(weatherData.maxTemp!)°"
+            self.humidityLabel.text = "\(weatherData.humidity!)"
+        }
+        
+        weatherRequest?.performRequest()
+        
+        
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
