@@ -112,6 +112,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBAction func reloadPressed(sender: AnyObject) {
         // TODO
+        self.startLocationRequest()
+        self.performServerRequest()
     }
 }
 

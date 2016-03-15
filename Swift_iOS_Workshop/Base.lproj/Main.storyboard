@@ -83,6 +83,9 @@
                                 <state key="normal" title="Neu laden">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="reloadPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p6n-Yd-Y0o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nGl-Wd-kIX">
                                 <rect key="frame" x="16" y="93" width="288" height="68"/>
