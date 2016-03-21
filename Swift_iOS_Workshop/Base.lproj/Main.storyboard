@@ -17,19 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Da-VP-lf2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rqz-mU-cSE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DC1-dC-o7c">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DC1-dC-o7c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ortschaft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fn-q2-Ms5">
                                 <rect key="frame" x="16" y="39" width="288" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -106,6 +96,7 @@
                             <constraint firstItem="n8v-Xt-DGk" firstAttribute="top" secondItem="nGl-Wd-kIX" secondAttribute="bottom" constant="101" id="25q-p9-O0G"/>
                             <constraint firstItem="ERg-2n-G5V" firstAttribute="top" secondItem="n8v-Xt-DGk" secondAttribute="bottom" constant="9" id="7zo-ji-Xei"/>
                             <constraint firstAttribute="trailing" secondItem="mfj-H5-KoD" secondAttribute="trailing" constant="16" id="Dht-w0-NPZ"/>
+                            <constraint firstAttribute="trailing" secondItem="DC1-dC-o7c" secondAttribute="trailing" id="DkJ-jW-bhj"/>
                             <constraint firstItem="SzQ-cD-A3G" firstAttribute="top" secondItem="2rd-SF-Udc" secondAttribute="bottom" constant="9" id="EOL-fC-aIE"/>
                             <constraint firstItem="n8v-Xt-DGk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="HGg-9F-MGs"/>
                             <constraint firstAttribute="trailing" secondItem="nGl-Wd-kIX" secondAttribute="trailing" constant="16" id="M5J-wL-ofv"/>
@@ -116,7 +107,9 @@
                             <constraint firstAttribute="trailing" secondItem="5Fn-q2-Ms5" secondAttribute="trailing" constant="16" id="QS0-Oq-UqB"/>
                             <constraint firstAttribute="trailing" secondItem="SzQ-cD-A3G" secondAttribute="trailing" constant="16" id="S5L-5K-8vo"/>
                             <constraint firstItem="tik-MS-cIG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="SWb-de-5eV"/>
+                            <constraint firstItem="DC1-dC-o7c" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="WpF-L8-RTY"/>
                             <constraint firstItem="c8W-2j-XEc" firstAttribute="top" secondItem="5Fn-q2-Ms5" secondAttribute="bottom" id="Wpr-D3-K1J"/>
+                            <constraint firstItem="DC1-dC-o7c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WqL-JC-WTZ"/>
                             <constraint firstItem="nGl-Wd-kIX" firstAttribute="top" secondItem="mfj-H5-KoD" secondAttribute="bottom" constant="4" id="ZK8-Nu-91d"/>
                             <constraint firstAttribute="trailing" secondItem="0zI-Td-WHs" secondAttribute="trailing" constant="16" id="anO-qt-ssJ"/>
                             <constraint firstItem="c8W-2j-XEc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="chq-jr-5JO"/>
@@ -124,6 +117,7 @@
                             <constraint firstItem="5Fn-q2-Ms5" firstAttribute="top" secondItem="KQL-i5-uUn" secondAttribute="bottom" constant="19" id="dje-yD-XRo"/>
                             <constraint firstAttribute="trailing" secondItem="c8W-2j-XEc" secondAttribute="trailing" constant="16" id="fIu-4M-YHS"/>
                             <constraint firstItem="5Fn-q2-Ms5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="g4l-AB-pF8"/>
+                            <constraint firstAttribute="bottom" secondItem="DC1-dC-o7c" secondAttribute="bottom" id="hId-DY-zlU"/>
                             <constraint firstItem="2rd-SF-Udc" firstAttribute="top" secondItem="nGl-Wd-kIX" secondAttribute="bottom" constant="101" id="hf3-Jf-XjB"/>
                             <constraint firstItem="nGl-Wd-kIX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="j5A-ND-ZXP"/>
                             <constraint firstItem="tik-MS-cIG" firstAttribute="top" secondItem="ERg-2n-G5V" secondAttribute="bottom" constant="9" id="sdH-xO-FdV"/>
