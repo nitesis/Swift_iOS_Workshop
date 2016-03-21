@@ -85,6 +85,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func performServerRequest() {
+        NSLog("ServerRequestLongitude", location!.coordinate.longitude)
         if let location = self.location {
             let longitude = location.coordinate.longitude
             let latitude = location.coordinate.latitude
