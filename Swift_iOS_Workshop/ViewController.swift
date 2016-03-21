@@ -85,10 +85,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func performServerRequest() {
-        // Erzeugt Instanz von WeatherRequest und speichert das in eine Property im ViewController
-        weatherRequest = WeatherRequest(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        if let location = self.location {
+            let longitude = location.coordinate.longitude
+            let latitude = location.coordinate.latitude
+            
+            // Erzeugt Instanz von WeatherRequest und speichert das in eine Property im ViewController
+            self.weatherRequest = WeatherRequest(latitude: latitude, longitude: longitude)
+
+        }
         
-        weatherRequest?.successBlock = {
+        self.weatherRequest?.successBlock = {
             weatherData in
             self.cityLabel.text = weatherData.city!
             self.weatherLabel.text = weatherData.weather!
@@ -96,9 +102,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.minTempLabel.text = "\(weatherData.minTemp!)°"
             self.maxTempLabel.text = "\(weatherData.maxTemp!)°"
             self.humidityLabel.text = "\(weatherData.humidity!)"
+            WeatherHelper.loadIcon(weatherData.icon, imageView: self.iconImageView)
         }
         
-        weatherRequest?.performRequest()
+        self.weatherRequest?.performRequest()
         
         
     }
