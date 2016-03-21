@@ -19,6 +19,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     private var weatherRequest: WeatherRequest? = nil
     private var location: CLLocation? = nil
     
+    //Outlets hier als schwache Referenz zur View, falls die ViewHierarchie gelöscht wird, erhalten wir für die Referenz nil
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
